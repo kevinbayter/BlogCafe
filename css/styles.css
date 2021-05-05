@@ -109,6 +109,10 @@ img {
   color: #fff;
 }
 
+a:hover{
+  color: rgb(60, 74, 102);
+}
+
 .logo__nombre {
   font-weight: 400;
 }
@@ -179,6 +183,10 @@ img {
 
 .boton--secundario {
   background-color: var(--primario);
+}
+
+.boton--enviar{
+  height:5rem;
 }
 
 .cursos {
@@ -274,7 +282,7 @@ img {
 }
 
 .formulario{
-  background-color:#fff;
+  background-color:#444;
   margin:-5rem auto 0 auto;
   max-width: 95%;
   padding:5rem;
@@ -290,7 +298,9 @@ img {
 .campo{
   margin-bottom: 2rem;
   border-radius: 5px;
+  justify-content:end;
 }
+
 
 .campo__label{
   flex:0 0 9rem;
@@ -303,14 +313,32 @@ img {
 }
 
 .campo__field--textarea{
-  height:15rem;
+  height:10rem;
+  resize: none;
 }
 
 textarea{
-  height:15rem;
+  height:10rem;
   border-radius: 2px;
+  resize:none;
+  background-color:rgb(83, 74, 74);
 }
 
 input{
   height:3.5rem;
+  background-color:rgb(83, 74, 74);
+  color: #fff;
 }
+
+input:focus{
+  transition: background-color;
+  transition-duration: 3s;
+  background-color: rgb(161, 145, 145);
+}
+
+textarea:focus{
+  transition: background-color;
+  transition-duration: 3s;
+  background-color: rgb(161, 145, 145);
+}
+
