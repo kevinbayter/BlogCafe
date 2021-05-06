@@ -50,7 +50,11 @@
 
         <div class="curso">
             <div class="curso__imagen">
-                <img src="img/curso1.jpg" alt="Imagen del curso">
+                <picture>
+                    <source loading="lazy" srcset="img/curso1.webp" type="image/webp">
+                    <img loading="lazy" src="img/curso1.jpg" alt="Imagen del curso">
+                </picture>
+
             </div>
 
             <div class="curso__informacion">
@@ -111,6 +115,7 @@
             </div>
         </div> <!-- Fin container -->
     </footer>
+    <script src="js/modernizr.js"></script>
 </body>
 
 </html>

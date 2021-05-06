@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog cafe</title>
+    <!-- color de la url -->
+    <meta name="theme-color" content="#4285f4">
+
+    <!-- prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
     <!-- Normalize -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
@@ -51,7 +56,10 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de granos de Cafe</h4>
@@ -64,7 +72,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 deliciosas Recetas de Café</h4>
@@ -126,6 +137,8 @@
             </div>
         </div> <!-- Fin container -->
     </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>
 
 </html>
