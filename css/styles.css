@@ -238,14 +238,12 @@ a:hover{
     display: flex;
     gap: 2rem;
   }
-
-  /* Flex 
+  
   .sobre-nosotros__imagen,
   .sobre-nosotros__texto {
     flex-basis: 50%;
   }
-  */
-
+  
   /* Grid */
   .sobre-nosotros{
     display:grid;
